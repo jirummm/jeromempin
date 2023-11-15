@@ -1,0 +1,43 @@
+*{
+padding-top: 20px;
+
+}
+body{
+    background-image: linear-gradient(wheat,white,wheat);
+    background-size: cover;
+
+}
+.resume-section {
+    background-color: rgb(194, 194, 194);
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.resume-section img{
+    height: 100px;
+    width: auto;
+    border-radius: 100px;
+ right: -20px  ;
+    position: relative;
+}
+.resume-section h1 {
+    font-size: 40px;
+}
+.backbtn{
+    position:  absolute;
+   
+ right: 10px;
+  }
+.backbtn .btn{
+    font-style: normal;
+    font-family: 'Shantell Sans', cursive;
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.5s ease;
+  }
+.backbtn .btn:hover{
+  background-color: rgb(79, 72, 72);
+  color: rgb(0, 0, 0);
+  }

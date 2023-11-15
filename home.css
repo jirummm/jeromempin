@@ -1,0 +1,146 @@
+body{
+  background-image: url(photo/background.jpg);
+  background-size: cover;
+}
+.social-icons {
+    font-size: 30px; 
+}
+.card {
+  width:500px;
+  height: 300px;
+  background-image: linear-gradient(rgb(71,15,35),white,rgb(71,15,35));
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 30px;
+}
+
+.card:hover {
+  border-radius: 90px;
+  height:500px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  background: rgba(103, 151, 255, 0.508);
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content{
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 10px;
+  transform: rotate(90deg) scale(-1);
+}
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+.container{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 30px;
+}
+a:hover{
+  background-color: black;
+  color: white;
+}
+.moreinfo{
+  position: absolute;
+  text-align: center;
+  transform:  translate(-50%,-50%);
+  top: 550px;
+  left: 769px;
+}
+.btn{
+  font-style: normal;
+  font-family: 'Shantell Sans', cursive;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.btn:hover{
+  background-color: rgb(22, 62, 141);
+  color: white;
+}
+
+.backbtn{
+position: absolute;
+text-align: center;
+transform:  translate(-50%,-50%);
+top: 50px;
+right: 50px;
+}
+.backbtn .btn{
+font-style: normal;
+font-family: 'Shantell Sans', cursive;
+border: 1px solid #000000;
+padding: 5px 10px;
+color: #000000;
+text-decoration: none;
+transition: 0.5s ease;
+}
+.backbtn .btn:hover{
+background-color: rgb(79, 72, 72);
+color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width:500px){
+  *{
+    padding-top: 50px;
+  }
+  .card{
+  position: relative;
+
+  width: 90%;
+  margin-bottom: 20px;
+}
+    
+.backbtn{
+  position: absolute;
+  top: 10px;
+  right: -10px;
+}
+.moreinfo{
+  position: relative;
+ 
+  top: 850px;
+  left: 50%;
+}
+}
